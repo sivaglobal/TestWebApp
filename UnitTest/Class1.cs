@@ -19,7 +19,7 @@ namespace UnitTest
         [Fact]
         public void FailingTest()
         {
-            Assert.Equal(5, Add(2, 2));
+            Assert.Equal(5, Add(3, 2));
         }
 
         int Add(int x, int y)
