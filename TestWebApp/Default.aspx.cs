@@ -18,7 +18,8 @@ namespace TestWebApp
 
         protected void btnSearch_Click(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection("Server=tcp:trk20181203.database.windows.net,1433;Initial Catalog=Tracker;Persist Security Info=False;User ID=siva;Password=Test1234;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+            String connstr = System.Configuration.ConfigurationManager.ConnectionStrings["DBConnString"].ConnectionString;
+            SqlConnection conn = new SqlConnection(connstr);
             SqlDataAdapter adap = new SqlDataAdapter("select * from Incidents where MID='"+txtMID.Text+"'", conn);
             DataSet ds = new DataSet();
             adap.Fill(ds);
