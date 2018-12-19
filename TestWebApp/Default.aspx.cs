@@ -18,13 +18,13 @@ namespace TestWebApp
 
         protected void btnSearch_Click(object sender, EventArgs e)
         {
-            String connstr = System.Configuration.ConfigurationManager.ConnectionStrings["DBConnString"].ConnectionString;
-            SqlConnection conn = new SqlConnection(connstr);
-            SqlDataAdapter adap = new SqlDataAdapter("select * from Incidents where MID='"+txtMID.Text+"'", conn);
-            DataSet ds = new DataSet();
-            adap.Fill(ds);
-            grdResults.DataSource = ds;
-            grdResults.DataBind();
+            //String connstr = System.Configuration.ConfigurationManager.ConnectionStrings["DBConnString"].ConnectionString;
+            //SqlConnection conn = new SqlConnection(connstr);
+            //SqlDataAdapter adap = new SqlDataAdapter("select * from Incidents where MID='"+txtMID.Text+"'", conn);
+            //DataSet ds = new DataSet();
+            //adap.Fill(ds);
+            //grdResults.DataSource = ds;
+            //grdResults.DataBind();
         }
     }
 }
