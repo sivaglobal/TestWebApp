@@ -3,7 +3,7 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
     <div class="jumbotron">
-        <h1>Tracker Archive Lookup - Version 1.0</h1>
+        <h1>Tracker Archive Lookup - Version 2.0</h1>
         <p class="lead"> Merchant ID <asp:TextBox ID="txtMID" runat="server"></asp:TextBox><asp:Button ID="btnSearch" class="btn btn-primary btn-lg" runat="server" Text="Search" OnClick="btnSearch_Click" /></p>
         
     </div>
